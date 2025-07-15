@@ -1,12 +1,14 @@
 algoritmo "Emprestimo"
 var
-    Em, Parcelas, Total, Juros: Real
+    Em, Taxa, Parcelas, Total, Juros: Real
 inicio
       Escreval("Quanto de emprestimo vc quer? ")
       Leia(Em)
+      Escreval("Qual é a taxa? ")
+      Leia(Taxa)
       Escreval("Quantas parcelas vc quer pagar? ")
       Leia(Parcelas)
-      Juros <- (Em*20/100)
+      Juros <- (Em*Taxa/100)
       Total <- (Em+Juros) / Parcelas
       Escreva("será ", Parcelas, " Parcelas de R$ ", Total)
 fimalgoritmo
