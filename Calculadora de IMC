@@ -1,0 +1,32 @@
+algoritmo "CalculoIMC"
+var
+   M, A, IMC: Real
+inicio
+      Escreva("Massa (Kg) : ")
+      Leia(M)
+      Escreva("Altura (M) : ")
+      Leia(A)
+      IMC <- M / (A^2)
+      EscrevaL("IMC: ", IMC:5:2)
+      se (IMC >= 18.5) e (IMC < 25) entao
+         Escreva("Parabéns! Você está no peso ideal! ")
+      fimSe
+      se (IMC < 17) entao
+         Escreva("Você está MUITO ABAIXO DO PESO! ")
+      fimSe
+      se (IMC >= 17) e (IMC < 18.5) entao
+         Escreva("Você está ABAIXO DO PESO! ")
+      fimSe
+      se (IMC >= 25) e (IMC < 30) entao
+         Escreva("Você está SOBREPESO! ")
+      fimSe
+      se (IMC >= 30) e (IMC < 35) entao
+         Escreva("Você está na OBESIDADE! ")
+      fimSe
+      se (IMC >= 35) e (IMC < 40) entao
+         Escreva("Você está na OBESIDADE SEVERA! ")
+      fimSe
+       se (IMC >= 40)  entao
+         Escreva("Você está na OBESIDADE MÓRBIDA! ")
+      fimSe
+fimalgoritmo
