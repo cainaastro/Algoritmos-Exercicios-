@@ -1,0 +1,29 @@
+algoritmo "AnalisaPartida"
+var
+   Bangu, Madu, Difere: Inteiro
+inicio
+      EscrevaL("------------------------------")
+      EscrevaL("      BANGU X MADUREIRA      ")
+      EscrevaL("------------------------------")
+      EscrevaL("")
+      Escreva("Quantos GOLS o bangu fez? ")
+      Leia(Bangu)
+      Escreva("Quantos GOLS o madureira fez? ")
+      Leia(Madu)
+      se (Bangu > Madu) entao
+         Difere <- Bangu - Madu
+      senao
+           Difere <- Madu - Bangu
+      fimSe
+      EscrevaL("------------------------------")
+      EscrevaL("DIFERENÇA:",Difere)
+      Escolha (Difere)
+              Caso 0
+                   Escreval("STATUS: EMPATE")
+              Caso 1,2,3,4
+                   Escreval("STATUS: PARTIDA NORMAL")
+              OutroCaso
+                       Escreval("STATUS: GOLEADA!!!!!!!!!")
+      FimEscolha
+      Escreva("--------------------------------")
+fimalgoritmo
