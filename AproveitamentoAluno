@@ -1,0 +1,39 @@
+algoritmo "AproveitamentoAluno"
+var
+   N1, N2, M: Real
+inicio
+      EscrevaL("-------------------------")
+      EscrevaL("   ESCOLA JAVALI BRAVO   ")
+      EscrevaL("-------------------------")
+      EscrevaL(" ")
+      Escreva("Primeira Nota: ")
+      Leia(N1)
+      Escreva("Segunda Nota: ")
+      Leia(N2)
+      M <- (N1 + N2) / 2
+      EscrevaL(" ")
+      EscrevaL("-------------------------")
+      EscrevaL(" MÉDIA:",M)
+      se (M < 5) entao
+         Escreval("APROVEITAMENTO: F")
+      senao
+           se (M >= 5) e (M < 6) entao
+              Escreval("APROVEITAMENTO: E")
+           senao
+                se (M >= 6) e (M < 7) entao
+                   Escreval("APROVEITAMENTO: D")
+                senao
+                     se (M >= 7) e (M < 8) entao
+                        EscrevaL("APROVEITAMENTO: C")
+                     senao
+                          se (M >=8) e (M < 9) entao
+                             EscrevaL("APROVEITAMENTO: B")
+                          senao
+                               EscrevaL("APROVEITAMENTO: A")
+                          fimSe
+                     fimSe
+                fimSe
+           fimSe
+      fimSe
+      EscrevaL("----------------------------")
+fimalgoritmo
