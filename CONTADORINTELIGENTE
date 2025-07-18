@@ -1,0 +1,28 @@
+algoritmo "CONTADORINTELIGENTE"
+var
+   Cont, N1, N2 : Inteiro
+inicio
+      Escreval("--------------------------")
+      Escreval("  CONTADOR INTELIGENTE!  ")
+      Escreval("--------------------------")
+      Escreval(" ")
+      Escreva("Início: ")
+      Leia(N1)
+      Escreva("Fim: ")
+      Leia(N2)
+      Escreval("-------------------------------")
+      Escreval("-------------------------------")
+      Se (N1 < N2) entao
+         Cont <- N1
+         Enquanto (Cont <= N2) faca
+                  Escreva(Cont, ", ")
+                  Cont <- Cont + 1
+         FimEnquanto
+      senao
+           Cont <- N1
+           Enquanto (Cont >= N2) faca
+                    Escreva(Cont, ", ")
+                    Cont <- Cont - 1
+           FimEnquanto
+      Fimse
+fimalgoritmo
