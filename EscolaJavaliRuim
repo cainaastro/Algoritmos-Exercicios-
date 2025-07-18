@@ -1,0 +1,31 @@
+algoritmo "EscolaJavaliRuim"
+var
+   Cont, QuanDeA: Inteiro
+   A, MaiorAluno: Caractere
+   Nota, Maior: Real
+inicio
+      Cont <- 1
+      Escreval("-------------------------")
+      Escreval("   ESCOLA JAVALI RUIM")
+      Escreval("-------------------------")
+      Escreval("")
+      Escreva("Quantos alunos tem na sua sala? ")
+      Leia(QuanDeA)
+      Escreval("---------------------------------")
+      Escreval("---------------------------------")
+      Enquanto (Cont <= QuanDeA) faca
+               Escreval("ALUNO", Cont)
+               Escreva("Qual o nome do aluno? ")
+               Leia(A)
+               Escreva("Qual foi a sua nota? ")
+               Leia(Nota)
+               se (Nota > Maior) entao
+                  Maior <- Nota
+                  MaiorAluno <- A
+               FimSe
+               Escreval("-----------------------")
+               Escreval("-----------------------")
+               Cont <- Cont + 1
+      FimEnquanto
+      Escreva("A maior nota foi de ", MaiorAluno," Com a Nota de ", Maior)
+fimalgoritmo
