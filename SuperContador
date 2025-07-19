@@ -1,0 +1,33 @@
+algoritmo "SuperContador"
+var
+   Resp, C : Inteiro
+inicio
+      Repita
+            Escreval("")
+            Escreval("=================")
+            Escreval("|    M E N U    |")
+            Escreval("=================")
+            Escreval("| [1] de 1 a 10 |")
+            Escreval("| [2] de 10 a 1 |")
+            Escreval("| [3] Sair      |")
+            Escreval("=================")
+            Leia(Resp)
+            Se (Resp = 1) entao
+               C <- 0
+               Repita
+                     C <- C + 1
+                     Escreva(C,"..")
+                Ate(C > 9)
+            senao
+                 Se (Resp = 2) entao
+                    C <- 10
+                    Repita
+                          Escreva(C,"..")
+                          C <- C - 1
+                    Ate(C < 1)
+                 senao
+                      Escreva("SAINDO...")
+                 FimSe
+           FimSe
+      Ate (Resp = 3)
+fimalgoritmo
