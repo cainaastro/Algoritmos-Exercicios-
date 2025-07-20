@@ -1,0 +1,28 @@
+algoritmo "AnalisadorDeValores"
+var
+   C, Cont, S, Dpor5, N, Spar, V : Inteiro
+   M : Real
+inicio
+      Cont <- 1
+      Para C <- 1 até 5 faca
+           Escreva("Digite o", Cont, "º valor: ")
+           Leia(V)
+           Cont <- Cont + 1
+           S <- V + S
+           Se (V%2=0) entao
+              Spar <- V + Spar
+           Fimse
+           Se (V=0) entao
+              N <- N + 1
+           Fimse
+           Se (V % 5= 0) entao
+              Dpor5 <- Dpor5 + 1
+           Fimse
+      FimPara
+      M <- S / 5
+      Escreval("A soma entre os valores é de ", S)
+      Escreval("A média é de: ", M)
+      Escreval("Valores divisíveis por  5: ", Dpor5)
+      Escreval("Valores Nulos: ", N)
+      Escreval("A soma dos valores pares é de ", Spar)
+fimalgoritmo
