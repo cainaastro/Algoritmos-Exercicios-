@@ -1,0 +1,14 @@
+algoritmo "SequenciadeFibonacci"
+var
+   N1, N2, N3, i : Inteiro
+inicio
+      N1 <- 0
+      N2 <- 1
+      N3 <- 0
+      Para i <- 1 ate 15 faca
+                N1<-N2
+                N2<-N3
+                N3<-N1+N2
+                escreva (N2)
+      FimPara
+fimalgoritmo
